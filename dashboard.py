@@ -216,5 +216,3 @@ st.image('img/feature-importance.png')
 
 st.info("Key Predictors of Churn: **total_trans_ct** (Total number of transactions)")
 st.info("This feature is the most important predictor in the model, suggesting that customers with a higher number of transactions are less likely to churn.")
-st.info("Customers with a total transaction count (total_trans_ct) of less than or equal to 20 are more likely to churn, as indicated by the predicted probability of > 0.499 (with our threshold set at 0.4501). ")
-st.info("Since total_trans_ct is the strongest predictor, improving transaction frequency could help reduce churn.")
