@@ -123,3 +123,31 @@ if st.button("Predict Churn"):
     else:
         st.success("This customer is likely to stay.")
 
+st.write("---")
+
+st.header('Sample of the Customer')
+
+# Adds a line break
+st.markdown("<br>", unsafe_allow_html=True)
+
+# Define the data for the table
+data = {
+    'Features': ['Gender', 'Number of Dependents', 'Education Level', 'Marital Status', 'Income Category', 
+                 'Card Category', 'Month as a Customer', 'Number of Products Used', 'Months Inactive in Last 12 Months', 
+                 'Number of Interactions in Last 12 Months', 'Credit Limit ($)', 'Total Amount of Funds Used ($)', 
+                 'Increase in Transaction Amount (Q4 to Q1)', 'Total Number of Transactions in the Last 12 Months', 
+                 'Increase in the Number of Transactions (Q4 to Q1)', 'Percentage of Credit Card Usage'],
+    'Existing Customer 1': ['Female', 2, 'Unknown', 'Single', '$40K - $60K', 'Blue', 36, 6, 1, 4, 3186.0, 2470, 0.580, 37, 0.233, 0.775],
+    'Existing Customer 2': ['Female', 4, 'Unknown', 'Married', 'Less than $40K', 'Blue', 46, 5, 3, 2, 4271.0, 1150, 1.064, 50, 0.724, 0.269],
+    'Attrited Customer 1': ['Male', 3, 'Graduate', 'Married', '$60K - $80K', 'Blue', 28, 2, 3, 2, 6407.0, 478, 1.022, 77, 0.833, 0.075],
+    'Attrited Customer 2': ['Female', 2, 'High School', 'Single', 'Less than $40K', 'Blue', 46, 6, 1, 2, 3199.0, 0, 1.047, 59, 0.639, 0.000]
+}
+
+# Create a DataFrame
+df = pd.DataFrame(data)
+
+# Add a custom index starting from 1 and set it to the 'Features' column
+df.index = [i + 1 for i in range(len(df))]
+
+# Display the DataFrame with a fixed height to prevent vertical scrolling
+st.dataframe(df, height=600)
