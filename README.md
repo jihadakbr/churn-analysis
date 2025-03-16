@@ -13,7 +13,7 @@ This dataset contains detailed information on customers, including demographic d
    1. [The Best Model](#the-best-model)
    2. [Key Insights](#key-insights)
 6. [Business Recommendations](#business-recommendations)
-7. [Deployment](#dashboard)
+7. [Deployment](#deployment)
 8. [License](#license)
 9. [Contact](#contact)
 
