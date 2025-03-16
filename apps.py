@@ -153,8 +153,8 @@ data = {
                  'Number of Interactions in Last 12 Months', 'Credit Limit ($)', 'Total Amount of Funds Used ($)', 
                  'Increase in Transaction Amount (Q4 to Q1)', 'Total Number of Transactions in the Last 12 Months', 
                  'Increase in the Number of Transactions (Q4 to Q1)', 'Percentage of Credit Card Usage'],
-    'Existing Customer 1': ['Male', 1, 'Graduate', 'Married	', '$80K - $120K', 'Blue', 36, 5, 3, 2, 6313.0, 782, 0.931, 34, 0.889, 0.124],
-    'Existing Customer 2': ['Female', 4, 'Unknown', 'Married', 'Less than $40K', 'Blue', 46, 5, 3, 2, 4271.0, 1150, 1.064, 50, 0.724, 0.269],
+    'Existing Customer 1': ['Female', 4, 'Unknown', 'Married', 'Less than $40K', 'Blue', 46, 5, 3, 2, 4271.0, 1150, 1.064, 50, 0.724, 0.269],
+    'Existing Customer 2': ['Female', 1, 'Graduate', 'Divorced', 'Less than $40K', 'Blue', 44, 5, 2, 2, 8687.0, 1763, 0.796, 123, 0.708, 0.203],
     'Attrited Customer 1': ['Male', 3, 'Graduate', 'Married', '$60K - $80K', 'Blue', 28, 2, 3, 2, 6407.0, 478, 1.022, 77, 0.833, 0.075],
     'Attrited Customer 2': ['Female', 2, 'High School', 'Single', 'Less than $40K', 'Blue', 46, 6, 1, 2, 3199.0, 0, 1.047, 59, 0.639, 0.000]
 }
