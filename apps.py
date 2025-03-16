@@ -90,6 +90,22 @@ st.write(
     " Please fill out the following form with the customer's details."
 )
 
+# Create the data for the table
+data = {
+    'Model': ['XGBoost'],
+    'Recall': ['91%'],
+    'Precision': ['70%'],
+    'F1-Score': ['79%'],
+    'Threshold': ['0.45']
+}
+
+# Create a DataFrame from the data
+df = pd.DataFrame(data)
+
+# Display in Streamlit
+st.dataframe(df, hide_index=True)
+
+
 # Collect the user input
 processed_input = preprocess_input()
 
@@ -137,7 +153,7 @@ data = {
                  'Number of Interactions in Last 12 Months', 'Credit Limit ($)', 'Total Amount of Funds Used ($)', 
                  'Increase in Transaction Amount (Q4 to Q1)', 'Total Number of Transactions in the Last 12 Months', 
                  'Increase in the Number of Transactions (Q4 to Q1)', 'Percentage of Credit Card Usage'],
-    'Existing Customer 1': ['Female', 2, 'Unknown', 'Single', '$40K - $60K', 'Blue', 36, 6, 1, 4, 3186.0, 2470, 0.580, 37, 0.233, 0.775],
+    'Existing Customer 1': ['Male', 1, 'Graduate', 'Married	', '$80K - $120K', 'Blue', 36, 5, 3, 2, 6313.0, 782, 0.931, 34, 0.889, 0.124],
     'Existing Customer 2': ['Female', 4, 'Unknown', 'Married', 'Less than $40K', 'Blue', 46, 5, 3, 2, 4271.0, 1150, 1.064, 50, 0.724, 0.269],
     'Attrited Customer 1': ['Male', 3, 'Graduate', 'Married', '$60K - $80K', 'Blue', 28, 2, 3, 2, 6407.0, 478, 1.022, 77, 0.833, 0.075],
     'Attrited Customer 2': ['Female', 2, 'High School', 'Single', 'Less than $40K', 'Blue', 46, 6, 1, 2, 3199.0, 0, 1.047, 59, 0.639, 0.000]
