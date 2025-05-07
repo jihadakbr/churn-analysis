@@ -1,6 +1,9 @@
 # Churn Analysis
 This dataset contains detailed information on customers, including demographic data, transaction behaviors, and interaction history. It focuses on identifying patterns that may indicate customer churn, such as frequent purchases, service engagement, and other relevant behaviors. By analyzing this data, we aim to predict which customers are at risk of leaving, enabling the development of targeted retention strategies to reduce churn and improve customer loyalty.
 
+To quickly access the Streamlit interactive dashboard, use this link: 
+- [churn-analysis-jihadakbar.streamlit.app](https://churn-analysis-jihadakbar.streamlit.app)
+
 ---
 
 ## Table of Contents
